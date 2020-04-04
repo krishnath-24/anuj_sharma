@@ -41,7 +41,7 @@ header{
     width: 70%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background: transparent;
     position: fixed;
 }
@@ -117,4 +117,29 @@ main{
     text-decoration: none;
     color: inherit;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+@media only screen and (max-width: 900px){
+
+    .navbar{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar .navbar-links {
+        display: none;
+        width: 0;
+    }
+
+    .profile-image{
+        width: 150px;
+        height: 150px;
+    }
+
+    header{
+        flex-direction: column;
+    }
 }
