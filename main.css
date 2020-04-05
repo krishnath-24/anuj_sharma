@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #1bb9ce;
+    background-color: #f0eeee;
     margin: 0;
     background-image: url('https://images.unsplash.com/photo-1493606278519-11aa9f86e40a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
     background-repeat: no-repeat;
@@ -92,7 +92,7 @@ main{
     padding-top: 20px;
     border: 1px solid #cccccc;
     border-radius: 20px;
-    box-shadow: 2px 2px 10px 1px rgb(131, 176, 177);
+    box-shadow: 2px 2px 10px 1px rgb(135, 146, 146);
     margin-bottom: 30px;
     margin-top: 150px;
     
@@ -188,6 +188,31 @@ main{
     font-family: Raleway;
 }
 
+
+/* youtube section */
+
+#youtube{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#youtube iframe{
+
+    height: 400px;
+    min-height: 200px;
+    min-width: 50%;
+    max-width: 90%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 10px 1px rgb(87, 85, 85);
+}
+
+#youtube figcaption{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    margin-top: 15px;
+    color: black;
+}
 
 
 
