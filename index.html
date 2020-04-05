@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anuj Sharma</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
     <meta name="theme-color" content="#1bbc9b"/>
 </head>
@@ -16,7 +17,7 @@
                 <ul>
                     <a href="#intro"><li>Intro</li></a>
                     <a href="#projects"><li>Projects</li></a>
-                    <a href="#"><li>Contact</li></a>
+                    <a href="#contact"><li>Contact</li></a>
                 </ul>
             </div>
         </nav>
@@ -27,7 +28,7 @@
             <img class="profile-image" src="https://media-exp1.licdn.com/dms/image/C5103AQFLejF5IMQ7ow/profile-displayphoto-shrink_200_200/0?e=1591228800&v=beta&t=V5AExkp_M3X9RBhqcnBPDnow1WBNvooJ8MMUzT8W9ng" alt="">
             <div class="intro-content">
                 <h2>Hi, I am Anuj Sharma, a 22 year old Software Engineer at Torry Harris Business Solutions.</h2>
-                <h3>I am a Front-end Developer, I have a huge interest in making youtube videos. </h3>
+                <h3>I am a Front-end Developer, youtuber. </h3>
                 <h4>Check out my <a class="youtube-link" target="_blank" href="https://www.youtube.com/channel/UCQ2vImWBSeUU-yAKgRP9aKw?view_as=subscriber"><i><strong>youtube</strong></i></a> channel.</h4>
             </div>
         </section>
@@ -35,22 +36,46 @@
         <section   class="projects">
 
             <div id="projects" class="projects-container">
+                <i id="prev-btn" class="fa fa-angle-left"></i>
+                <div class="project-content" id="yelpcamp">
+                    <img class="project-image" src="https://images.unsplash.com/photo-1537565266759-34bbc16be345?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="Camp image">
+                    <div class="project-details" >
 
-                <img class="project-image" src="https://images.unsplash.com/photo-1537565266759-34bbc16be345?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="Camp image">
-                <div class="project-details">
+                        <h3 class="project-name">YelpCamp</h3>
+                        <p id="project-description">
+                            The App was developed using Node.js, Express and mongoDB for the 
+                            back-end and html, css, bootstrap, javascript for the front-end part and 
+                            deployed on heroku.
+                            The app contains user login and auth using passport.js, user can add, edit 
+                            or delete campgorunds and view all other campgrounds. User can also add or view 
+                            comments and give reviews.
+                        </p>
+                        
 
-                    <h3 class="project-name">YelpCamp</h3>
-                    <p id="project-description">
-                        The App was developed using Node.js, Express and mongoDB for the 
-                        back-end and html, css, bootstrap, javascript for the front-end part and 
-                        deployed on heroku.
-                        The app contains user login and auth using passport.js, user can add, edit 
-                        or delete campgorunds and view all other campgrounds. User can also add or view 
-                        comments and give reviews.
-                    </p>
-
+                    </div>
                 </div>
+                
+                <div class="project-content active-project" id="todo">
+                    <img class="project-image" src="https://images.unsplash.com/photo-1530041859951-6cbea5e69b14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="todo image">
+                    <div class="project-details" >
+
+                        <h3 class="project-name ">Task Management</h3>
+                        <p id="project-description">
+                            The App was built using React, react components, Jsx, hooks and much more,
+                            a user-friendly app designed efficiently to manage all todos.It's heavily focused on tasks, and that's what the tool does best. Under each task, you can sub-tasks, additional notes, priority ratings, due dates, and reminders
+                        </p>
+                        
+
+                    </div>
+                </div>
+                
+                
+                <i id="next-btn" class="fa fa-angle-right"></i> 
             </div>
+
+        </section>
+
+        <section id="contact">
 
         </section>
     </main>
