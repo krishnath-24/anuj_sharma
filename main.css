@@ -33,9 +33,12 @@ header{
     cursor: pointer;
     color: rgb(122, 118, 118);
     transition: all 0.2s linear;
+    width: 250px;
 }
 
-
+.typed-cursor{
+    display: none !important;
+}
 #name:hover{
     transform:scale(1.1);
     color: rgb(52, 141, 141);
@@ -103,7 +106,7 @@ section{
     text-align: center ;
     padding-top: 20px;
     border: 0.5px solid #cccccc;
-    border-radius: 20px;
+    border-radius: 15px;
     margin-bottom: 30px;
     margin-top: 150px;
     box-shadow: 1px 1px 10px 1px #ccc;
@@ -113,7 +116,7 @@ section{
 #quote{
     height: fit-content;
     border-radius: 0px;
-    /* box-shadow: none; */
+    display: none;
 }
 
 /* Introduction section styling */

@@ -18,25 +18,37 @@ var projects = [
     {
         name : 'Task Manager',
         link : 'https://github.com/krishnath-24/React/tree/master/poketimes/src',
-        github : 'https://github.com/krishnath-24/React/tree/master/poketimes/src'
+        github : 'https://github.com/krishnath-24/React/tree/master/poketimes/src',
+        summary : `The App was built using React, react components, Jsx, hooks and much more, a user-friendly app designed efficiently to manage all todos.It's heavily focused on tasks, and that's what the tool does best. Under each task, you can sub-tasks, additional notes, priority ratings, due dates, and add reminders.'`
     }
 ]
 
 
-
-crackAJoke();
+crackAQuote();
 changeNavbarColor();
 horizontalScroll();
 addProjectsToContainer();
 
 
 
-function crackAJoke(){
+
+function crackAQuote(){
     fetch('https://type.fit/api/quotes').then(function(response){
 
         return response.json();
 
     }).then(function(data){
+
+        populateQuote(data);
+
+        
+    }).catch(function(err){
+        console.log(err);
+    });
+}
+
+function populateQuote(data){
+
         let index = Math.floor(data.length * Math.random());
         var quote = data[index].text;
         var author = data[index].author;
@@ -61,13 +73,12 @@ function crackAJoke(){
         quotePara.textContent = quote;
         authorSpan.textContent = author;
 
+       
         quoteDiv.appendChild(quotePara);
         if(author) quoteDiv.appendChild(authorSpan);
-
-        
-    }).catch(function(err){
-        console.log(err);
-    });
+        $(quoteDiv).css({
+            'display': 'block'
+        })
 }
 
 
