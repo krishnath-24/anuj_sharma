@@ -34,6 +34,7 @@ header{
     color: rgb(122, 118, 118);
     transition: all 0.2s linear;
     width: 250px;
+    text-align: center;
 }
 
 .typed-cursor{
@@ -114,10 +115,21 @@ section{
 }
 
 #quote{
+    padding: 10px;
     height: fit-content;
     border-radius: 0px;
     display: none;
 }
+
+#quote h5{
+    text-align: left;
+}
+#quote span{
+    text-align: right !important;
+    width: 100% !important;
+    display: block;
+}
+
 
 /* Introduction section styling */
 
@@ -184,6 +196,11 @@ section{
     user-select: none;
     color: black;
     
+}
+
+.projects i:hover{
+    box-shadow: 0px 0px 2px 1px #ccc;
+    transition: all 0.2s linear;
 }
 
 .project-content{
@@ -301,7 +318,9 @@ section{
 .skill-container:hover {
     background-color: rgb(80, 79, 79);
     color: white;
-    transition: all 0.2s linear;
+    transition: all 0.4s ease-in-out;
+    border-radius: 50%;
+    
 }
 
 
@@ -337,6 +356,7 @@ footer span{
     color: gray;
     text-align: center;
     margin-right: 10px;
+    vertical-align: middle;
 }
 
 footer .connect{
@@ -347,10 +367,13 @@ footer .connect{
     border-radius: 5px;
 }
 
+
+
 footer i:hover{
     color: rgb(58, 128, 150);
     transform: rotate(360deg);
     transition: transform 0.4s linear;
+    
 }
 
 
