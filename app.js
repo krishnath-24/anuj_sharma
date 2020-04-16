@@ -4,6 +4,8 @@ var prevButton = document.getElementById('prev-btn');
 var yelpCamp = document.getElementById('yelpcamp');
 var reactApp = document.getElementById('todo');
 var profileImage = document.getElementsByClassName('profile-image');
+var quoteDiv = document.getElementById('quote');
+
 
 var projects = [
     {
@@ -22,12 +24,51 @@ var projects = [
 
 
 
-
+crackAJoke();
 changeNavbarColor();
 horizontalScroll();
 addProjectsToContainer();
 
 
+
+function crackAJoke(){
+    fetch('https://type.fit/api/quotes').then(function(response){
+
+        return response.json();
+
+    }).then(function(data){
+        let index = Math.floor(data.length * Math.random());
+        var quote = data[index].text;
+        var author = data[index].author;
+
+        var quotePara = document.createElement('h5');
+        var authorSpan = document.createElement('span');
+
+        $(quotePara).css({
+            'font-family' : 'muli',
+            'font-style' : 'italic',
+            'font-weight' : '300'
+        })
+
+        $(authorSpan).css({
+            'text-align' : 'right',
+            'width' : '90%',
+            'font-family' : 'sans-serif',
+            'font-weight' : '300'
+
+        })
+
+        quotePara.textContent = quote;
+        authorSpan.textContent = author;
+
+        quoteDiv.appendChild(quotePara);
+        if(author) quoteDiv.appendChild(authorSpan);
+
+        
+    }).catch(function(err){
+        console.log(err);
+    });
+}
 
 
 
